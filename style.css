@@ -1,0 +1,208 @@
+/*Shaine Poirier
+*2023-07-23
+*CSS Assignment 2
+ */
+
+html{
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+}
+/*********************************************************************************************************/
+/*Style the Header*/
+.nav-header{
+    background-color: rgba(0,0,0,.85);
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
+    position: sticky;
+    top: 0;
+}
+
+.container-header{
+    display: flex;
+    max-width: 100%;
+    padding-right: 1.0rem;
+    padding-left: 1.0rem;
+    margin-right: 15rem;
+    margin-left: 15rem;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+/*********************************************************************************************************/
+/*Style the Masthead*/
+.container-masthead{
+    display: flex;
+    height: 25rem;
+    padding: 3rem;
+    margin: 1rem;
+    background-color: whitesmoke;
+}
+
+.inner-masthead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+
+.inner-masthead > p{
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.inner-masthead a{
+    color: gray;
+    border: 1px solid;
+    border-color: gray;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+/*********************************************************************************/
+/*Style the main content*/
+.container-row1{
+    display: flex;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    max-width: 100%;
+}
+
+.object1{
+    flex-grow: 1;
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    margin-right: 1rem;
+    background-color: #343a40
+}
+
+.object1 > h2{
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.object1 > p{
+    font-size: 1.25rem;
+    color: whitesmoke;
+}
+
+.color_box1{
+    width: 80%;
+    height: 300px;
+    border-radius: 21px 21px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.object2{
+    flex-grow: 1;
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    margin-right: 1rem;
+    background-color: whitesmoke;
+}
+
+.object2 > h2{
+    font-size: 2rem;
+    color: black;
+}
+
+.object2 > p{
+    font-size: 1.25rem;
+    color: black;
+}
+
+.color_box2{
+    width: 80%;
+    height: 300px;
+    border-radius: 21px 21px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #343a40;
+}
+
+.object3{
+    flex-grow: 1;
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    margin-right: 1rem;
+    background-color: blue;
+}
+
+.object3 > h2{
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.object3 > p{
+    font-size: 1.25rem;
+    color: whitesmoke;
+}
+
+.color_box3{
+    width: 80%;
+    height: 300px;
+    border-radius: 21px 21px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #343a40;
+}
+/************************************************************************************************/
+/*Style the footer*/
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer-row{
+    display: flex;
+}
+
+.footer-column{
+    flex-grow: 1;
+    max-width: 100%;
+    margin-right: 6rem;
+}
+
+h5{
+    font-size: 1.25rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.footer-list{
+    list-style: none;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    padding-left: 0;
+}
