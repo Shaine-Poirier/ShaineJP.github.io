@@ -1,208 +1,74 @@
-/*Shaine Poirier
-*2023-07-23
-*CSS Assignment 2
- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Oswald:wght@200;600&display=swap');
 
-html{
-    font-size: 16px;
-}
-
-body{
-    margin: 0;
-}
-/*********************************************************************************************************/
-/*Style the Header*/
-.nav-header{
-    background-color: rgba(0,0,0,.85);
-    padding-bottom: 0.25rem;
-    padding-top: 0.25rem;
-    position: sticky;
-    top: 0;
+/* TYPOGRAPHY */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.2;
+    background-color: #000;
+    color: #fff;
 }
 
-.container-header{
-    display: flex;
-    max-width: 100%;
-    padding-right: 1.0rem;
-    padding-left: 1.0rem;
-    margin-right: 15rem;
-    margin-left: 15rem;
-    justify-content: space-between;
-}
-
-a{
-    text-decoration: none;
-    color: gray;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-/*********************************************************************************************************/
-/*Style the Masthead*/
-.container-masthead{
-    display: flex;
-    height: 25rem;
-    padding: 3rem;
-    margin: 1rem;
-    background-color: whitesmoke;
-}
-
-.inner-masthead{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.grid-ex-2 div p {
+    color: #333;
     text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-right: 7rem;
-    margin-left: 7rem;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 100%;
-}
-
-h1{
-    font-weight: 400;
-    font-size: 3.5rem;
-}
-
-.inner-masthead > p{
-    font-weight: 400;
-    font-size: 1.25rem;
-}
-
-.inner-masthead a{
-    color: gray;
-    border: 1px solid;
-    border-color: gray;
-    text-align: center;
-    font-size: 1rem;
-    padding: 0.5rem;
-}
-/*********************************************************************************/
-/*Style the main content*/
-.container-row1{
-    display: flex;
-    padding-left: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    max-width: 100%;
-}
-
-.object1{
-    flex-grow: 1;
-    text-align: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 3rem;
-    margin-right: 1rem;
-    background-color: #343a40
-}
-
-.object1 > h2{
     font-size: 2rem;
-    color: whitesmoke;
 }
 
-.object1 > p{
-    font-size: 1.25rem;
-    color: whitesmoke;
+/* LAYOUT & APPEARANCE */
+main {
+    max-width: 90vw;
+    margin: 0 auto;
 }
 
-.color_box1{
-    width: 80%;
-    height: 300px;
-    border-radius: 21px 21px 0 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
+section {
+    margin: 4em 0;
 }
 
-.object2{
-    flex-grow: 1;
-    text-align: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 3rem;
-    margin-right: 1rem;
-    background-color: whitesmoke;
+div.image {
+    width: 90%;
+    margin: 0 auto;
 }
 
-.object2 > h2{
-    font-size: 2rem;
-    color: black;
-}
-
-.object2 > p{
-    font-size: 1.25rem;
-    color: black;
-}
-
-.color_box2{
-    width: 80%;
-    height: 300px;
-    border-radius: 21px 21px 0 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #343a40;
-}
-
-.object3{
-    flex-grow: 1;
-    text-align: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 3rem;
-    margin-right: 1rem;
-    background-color: blue;
-}
-
-.object3 > h2{
-    font-size: 2rem;
-    color: whitesmoke;
-}
-
-.object3 > p{
-    font-size: 1.25rem;
-    color: whitesmoke;
-}
-
-.color_box3{
-    width: 80%;
-    height: 300px;
-    border-radius: 21px 21px 0 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #343a40;
-}
-/************************************************************************************************/
-/*Style the footer*/
-
-footer{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.footer-row{
-    display: flex;
-}
-
-.footer-column{
-    flex-grow: 1;
+.image img {
     max-width: 100%;
-    margin-right: 6rem;
+    height:auto;
 }
 
-h5{
-    font-size: 1.25rem;
-    text-align: left;
-    margin-bottom: 0.5rem;
+article {
+    border: 2px dashed #999;
+    border-radius: 5px;
+    padding: 1em;
 }
 
-.footer-list{
-    list-style: none;
-    font-size: 1rem;
-    text-align: left;
-    margin-bottom: 1rem;
-    padding-left: 0;
+/* CHALLENGE ONE */
+
+/* STEP ONE - Using the first section (.grid-ex-1), create a grid that allows for as many columns as will fit in the available space, with 100px as the  minimum size of the column and 1fr as the maximum column. Allow for auto-placement to take care of grid item placement  */
+
+.grid-ex-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/* CHALLENGE TWO */
+
+/* STEP ONE */
+/* Using grid, recreate the layout displayed in the image included in this section. Without changing the order of content in the HTML, how could you make Item One appear on top of Item Two? */
+
+.grid-ex-2 {
+    display: grid;
+    height: 50vh;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#itemone {
+    background-color: rgba(254, 104, 71, 0.6);
+    color: #fff;
+    grid-column: 2 / span 3;
+}
+
+#itemtwo {
+    background-color: rgba(251, 177, 60, 0.5);
+    color: #fff;
+    grid-row: 1 / span 3;
 }
